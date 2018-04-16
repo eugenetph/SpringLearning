@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package springdemo;
+package StudentDemo;
+
+import javax.annotation.Resource;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author Eugene Tan
  */
+
+@Component
 public class Student {
     private String studentName;
     private int studentID;
@@ -39,7 +44,7 @@ public class Student {
     public int getStudentID() {
         return studentID;
     }
-
+    
     public void setStudentID(int studentID) {
         this.studentID = studentID;
     }
@@ -48,6 +53,7 @@ public class Student {
         return address;
     }
 
+    @Resource
     public void setAddress(Address address) {
         this.address = address;
     }
